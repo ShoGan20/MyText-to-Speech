@@ -12,6 +12,25 @@
 
     <input id='txtInput' /> <br><br>    
     <button id='btnSpeak'>Speak!</button>
+    <h4>Please Choose your lnguage</h4>
+
+<form action="https://translate.google.com/translate" target="_blank">
+<input type="hidden" name="sl" value="auto">Read
+<select type="text" name="tl">
+<option value="hi">Hindi</option>
+<option value="es">Spanish</option>
+<option value="zh-hans">Mandarin</option>
+<option value="fr">French</option>
+<option value="ar">Arabic</option>
+</select>
+<input type="hidden" name="js" value="y">
+<input type="hidden" name="prev" value="_t">
+<input type="hidden" name="hl" value="en">
+<input type="hidden" name="ie" value="UTF-8">
+<input type="hidden" name="u" value="https://text-to-speech-translator.netlify.app/">
+<input type="hidden" name="edit-text" value="">
+<button type="submit" value="Submit">Translate</button>
+</form>
 
     <script>
         var txtInput = document.querySelector('#txtInput');
@@ -51,5 +70,8 @@
             voiceList.selectedIndex = selectedIndex;
         }
     </script>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
